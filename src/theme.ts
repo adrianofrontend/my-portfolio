@@ -10,9 +10,9 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'IBM Plex Mono'
-  }
+    fontFamily: 'IBM Plex Mono',
+  },
 });
 
-theme = responsiveFontSizes(theme)
+theme = responsiveFontSizes(theme);
 export default theme;
