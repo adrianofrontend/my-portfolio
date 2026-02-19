@@ -72,7 +72,7 @@ const Hero = () => {
                 size={{ xs: 12, md: 'auto' }}
                 sx={{ display: 'flex', justifyContent: 'center' }}
               >
-                <StyledButton startIcon={<DownloadIcon />}>
+                <StyledButton onClick={() => console.log('download')} startIcon={<DownloadIcon />}>
                   <Typography>Download CV</Typography>
                 </StyledButton>
               </Grid>
@@ -81,7 +81,7 @@ const Hero = () => {
                 size={{ xs: 12, md: 'auto' }}
                 sx={{ display: 'flex', justifyContent: 'center' }}
               >
-                <StyledButton startIcon={<EmailOutlinedIcon />}>
+                <StyledButton onClick={() => console.log('contact')} startIcon={<EmailOutlinedIcon />}>
                   <Typography>Contact me</Typography>
                 </StyledButton>
               </Grid>

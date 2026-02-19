@@ -20,11 +20,12 @@ const StyledButtonRoot = styled('button')(({ theme }) => ({
 type StyledButtonProps = {
   children: React.ReactNode;
   startIcon?: React.ReactNode;
+  onClick: () => void
 };
 
-const StyledButton = ({ children, startIcon }: StyledButtonProps) => {
+const StyledButton = ({ children, startIcon, onClick }: StyledButtonProps) => {
   return (
-    <StyledButtonRoot>
+    <StyledButtonRoot onClick={onClick}>
       {startIcon}
       {children}
     </StyledButtonRoot>
